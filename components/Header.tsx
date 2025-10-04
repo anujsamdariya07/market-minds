@@ -1,0 +1,31 @@
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
+import NavItems from './NavItems';
+import UserDropdown from './UserDropdown';
+
+const Header = () => {
+  return (
+    <header className='sticky top-0 bg-gray-800 z-50'>
+      <div className='container mx-auto flex items-center justify-between py-4 px-6'>
+        <Link href='/'>
+          <Image
+            src='/assets/icons/logo.svg'
+            alt='Market Minds Logo'
+            width={140}
+            height={32}
+            className='h-8 cursor-pointer'
+          />
+        </Link>
+
+        <nav className='hidden sm:block'>
+          <NavItems />
+        </nav>
+
+        <UserDropdown />
+      </div>
+    </header>
+  );
+};
+
+export default Header;
