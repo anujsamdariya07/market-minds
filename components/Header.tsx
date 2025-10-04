@@ -6,6 +6,7 @@ import UserDropdown from './UserDropdown';
 
 const Header = () => {
   return (
+<<<<<<< HEAD
     <header className='sticky top-0 bg-gray-800 z-50'>
       <div className='container mx-auto flex items-center justify-between py-4 px-6'>
         <Link href='/'>
@@ -19,6 +20,21 @@ const Header = () => {
         </Link>
 
         <nav className='hidden sm:block'>
+=======
+    <header className="sticky top-0 bg-gray-800 z-50">
+      <div className="container mx-auto flex items-center justify-between py-4 px-6">
+        <Link href="/">
+          <Image
+            src="/assets/icons/logo.svg"
+            alt="Market Minds Logo"
+            width={140}
+            height={32}
+            className="h-8 cursor-pointer"
+          />
+        </Link>
+
+        <nav className="hidden sm:block">
+>>>>>>> 92c5a0bf6d4db08dec68fdb76d13e1d3f4a89c47
           <NavItems />
         </nav>
 
