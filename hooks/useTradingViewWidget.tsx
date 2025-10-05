@@ -27,8 +27,10 @@ const useTradingViewWidget = (
     containerRef.current.dataset.loaded = 'true';
 
     return () => {
-      containerRef.current!.innerHTML = '';
-      delete containerRef.current!.dataset.loaded;
+      if (containerRef.current) {
+        containerRef.current!.innerHTML = '';
+        delete containerRef.current!.dataset.loaded;
+      }
     };
   }, [scriptUrl, config, height]);
 
