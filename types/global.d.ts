@@ -215,6 +215,14 @@ declare global {
     threshold: number;
     changePercent?: number;
   };
+
+  interface UserForNewsEmail {
+    _id: string;
+    id: string;
+    email: string;
+    name: string;
+    country: string;
+  }
 }
 
 export {};
