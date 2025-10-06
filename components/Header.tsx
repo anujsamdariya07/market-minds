@@ -4,7 +4,7 @@ import React from 'react';
 import NavItems from './NavItems';
 import UserDropdown from './UserDropdown';
 
-const Header = () => {
+const Header = ({user}: {user: User}) => {
   return (
     <header className='sticky top-0 bg-gray-800 z-50'>
       <div className='container mx-auto flex items-center justify-between py-4 px-6'>
@@ -22,7 +22,7 @@ const Header = () => {
           <NavItems />
         </nav>
 
-        <UserDropdown />
+        <UserDropdown user={user} />
       </div>
     </header>
   );
