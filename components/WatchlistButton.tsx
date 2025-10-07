@@ -15,6 +15,8 @@ const WatchlistButton = ({
 }: WatchlistButtonProps) => {
   const [added, setAdded] = useState<boolean>(!!isInWatchlist);
 
+  console.log(company)
+
   const label = useMemo(() => {
     if (type === 'icon') return added ? '' : '';
     return added ? 'Remove from Watchlist' : 'Add to Watchlist';
